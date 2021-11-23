@@ -1,3 +1,70 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Lobster&family=Raleway&family=Tajawal&display=swap");
+
+/* fonts to be used */
+/* 
+font-family: 'Comforter Brush', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Tajawal', sans-serif;
+*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+}
+
+.base-home {
+  background-image: url("../img/base_home_wallpaper_2.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  background-size: cover;
+}
+
+.base-nav {
+  background-color: rgba(169, 169, 169, 0.37);
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.base-logo,
+.base-link,
+.base-title {
+  padding: 25px 130px;
+}
+
+.base-title {
+  font-family: "Raleway", sans-serif;
+}
+
+.base-logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 64px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+.base-logo:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.base-logo span {
+  color: #eca62e;
+}
+
+.base-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.base-link img {
+  height: 48px;
+  width: 48px;
 }
