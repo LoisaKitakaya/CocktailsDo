@@ -6,7 +6,8 @@ from .views import *
 
 # mapping urls
 urlpatterns = [
-    path('', home, name='home'),
+    path('', base, name='base'),
+    path('index', home, name='home'),    
 ]
 
 if settings.DEBUG:
