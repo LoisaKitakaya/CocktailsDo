@@ -61,6 +61,7 @@ html {
 
 .base-logo:hover {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff;
+  cursor: pointer;
 }
 
 .base-logo span {
@@ -209,11 +210,12 @@ Beginning index.html styling
   margin: 0 20px;
   background-color: #37373d;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .drink-item-name a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   font-weight: bold;
 }
 
