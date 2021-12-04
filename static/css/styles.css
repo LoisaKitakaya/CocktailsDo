@@ -162,7 +162,8 @@ Footer section
 }
 
 .footer p {
-    font-weight: bold;
+  font-weight: bold;
+  font-family: 'Tajawal', sans-serif;
 }
 
 /* 
@@ -221,4 +222,55 @@ Beginning index.html styling
 
 .drink-item-name a:hover {
   text-decoration: underline;
+}
+
+/* 
+End of index.html section
+*/
+
+/* 
+#############################################################
+*/
+
+/* 
+Beginning details.html styling
+*/
+
+.drink-image {
+  height: 380px;
+  width: 360px;
+}
+
+.detail-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  /* padding: 20px; */
+}
+
+.detail-item {
+  padding: 20px;
+  background-color: #37373da9;
+}
+
+.detail-item p {
+  /* color: whitesmoke; */
+}
+
+.detail-item img {
+  border-radius: 10px;
+}
+
+.ingredient span, 
+.procedure span, 
+.person-posting span, 
+.drink-glass span, 
+.drink-category span, 
+.drink-date span, 
+.drink-name {
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  /* color: whitesmoke; */
 }
