@@ -26,8 +26,7 @@
         </a>
       </div>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Search</a>
+        <a href="{% url 'home' %}">Home</a>
         <a href="#">Upload</a>
         <a href="">Signup</a>
         <a href="#">login</a>
@@ -41,54 +40,27 @@
 
     <!-- list of all drinks section -->
     <div class="drink-list-container">
+      <!-- if -->
+      {% if drinksdb %}
+      <!-- if -->
+      <!-- for -->
+      {% for drinks in drinksdb %}
+      <!-- for -->
       <div class="drink-item-container">
-        <img src="{% static 'img/whiskey sour.webp' %}" alt="" />
+        <img src="{{ drinks.drink_image.url }}" alt="" />
         <div class="drink-item-name">
-          <a href="#">Drink 1</a>
+          <a href="#">{{ drinks.drink_name }}</a>
         </div>
       </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_2.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 2</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_3.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 3</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_1.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 4</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_2.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 5</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_3.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 6</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_4.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 7</a>
-        </div>
-      </div>
-      <div class="drink-item-container">
-        <img src="{% static 'img/drink_4.jpg' %}" alt="" />
-        <div class="drink-item-name">
-          <a href="#">Drink 8</a>
-        </div>
-      </div>
+      <!-- endfor -->
+      {% endfor %}
+      <!-- endfor -->
+      <!-- else -->
+      {% else %}
+      <!-- else -->
+      <!-- endif -->
+      {% endif %}
+      <!-- endif -->
     </div>
 
     <!-- footer section -->
