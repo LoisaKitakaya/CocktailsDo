@@ -8,7 +8,7 @@ from .views import *
 # mapping urls
 urlpatterns = [
     path('', base, name='base'),
-    path('index', home, name='home'),    
+    path('drinks', home, name='home'),    
 ]
 
 handler404 = 'drinks_app.views.error_404'
