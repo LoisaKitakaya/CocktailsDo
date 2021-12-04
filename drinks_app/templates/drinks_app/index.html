@@ -10,9 +10,92 @@
       type="text/css"
       href="{% static 'css/styles.css' %}"
     />
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/favicon.ico' %}"
+      type="image/x-icon"
+    />
     <title>CocktailsDo</title>
   </head>
-  <body>
-    <h1>Working</h1>
+  <body class="body">
+    <!-- navigation section -->
+    <div class="navigation">
+      <div class="nav-logo">
+        <a href="{% url 'base' %}">
+          <h1>Cocktails<span>Do</span></h1>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Upload</a>
+        <a href="">Signup</a>
+        <a href="#">login</a>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro">
+      <h1 class="intro-title">Browse over 100 cocktail recipes!</h1>
+    </div>
+
+    <!-- list of all drinks section -->
+    <div class="drink-list-container">
+      <div class="drink-item-container">
+        <img src="{% static 'img/whiskey sour.webp' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 1</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_2.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 2</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_3.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 3</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_1.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 4</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_2.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 5</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_3.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 6</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_4.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 7</a>
+        </div>
+      </div>
+      <div class="drink-item-container">
+        <img src="{% static 'img/drink_4.jpg' %}" alt="" />
+        <div class="drink-item-name">
+          <a href="#">Drink 8</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+      <div class="nav-logo">
+        <p>Copyright © 2021 Freedom Loisa | kitakayaloisa@gmail.com</p>
+      </div>
+    </div>
   </body>
 </html>

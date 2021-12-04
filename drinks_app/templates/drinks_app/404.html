@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <title>CocktailsDo</title>
+  </head>
+  <body>
+    <div class="base-home">
+      <!-- <img src="{% static 'img/base home wallpaper.jpg' %}" alt="" /> -->
+      <div class="base-nav">
+        <h1 class="base-logo">Cocktails<span>Do</span></h1>
+        <h2 class="base-title">Welcome to CocktailsDo</h2>
+        <a href="{% url 'home' %}" class="base-link">
+          <img
+            src="{% static 'img/lets-go.png' %}"
+            alt="go to cocktails page icon"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
