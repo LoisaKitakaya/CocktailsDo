@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from .models import DrinksData
 
 # Create your views here.
 def base(request):
@@ -11,4 +12,12 @@ def error_404(request, exception):
 
 def home(request):
 
-    return render(request, 'drinks_app/index.html')
+    drinksdb = DrinksData.objects.all()
+
+    print('myoutput', drinksdb)
+
+    context = {
+        'drinksdb' : drinksdb
+    }
+
+    return render(request, 'drinks_app/index.html', context)
