@@ -49,7 +49,7 @@
       <div class="drink-item-container">
         <img src="{{ drinks.drink_image.url }}" alt="" />
         <div class="drink-item-name">
-          <a href="#">{{ drinks.drink_name }}</a>
+          <a href="{% url 'details' drinks.id %}">{{ drinks.drink_name }}</a>
         </div>
       </div>
       <!-- endfor -->
