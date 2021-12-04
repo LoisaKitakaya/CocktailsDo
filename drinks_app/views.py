@@ -14,10 +14,22 @@ def home(request):
 
     drinksdb = DrinksData.objects.all()
 
-    print('myoutput', drinksdb)
+    print('Output: ', drinksdb)
 
     context = {
         'drinksdb' : drinksdb
     }
 
     return render(request, 'drinks_app/index.html', context)
+
+def details(request, id):
+
+    drink_details = DrinksData.objects.get(id=id)
+
+    print('Output: ', drink_details)
+
+    context = {
+        'drink_details' : drink_details
+    }
+
+    return render(request, 'drinks_app/details.html', context)
