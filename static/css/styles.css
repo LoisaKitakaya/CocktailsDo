@@ -9,6 +9,14 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
 
+/* 
+##############################################
+*/
+
+/* 
+Begin base.html styling
+*/
+
 body,
 html {
   margin: 0;
@@ -67,4 +75,148 @@ html {
 .base-link img {
   height: 48px;
   width: 48px;
+}
+
+/* 
+End base.html styling
+*/
+
+/* 
+#############################################
+*/
+
+/* 
+Beginning of universal section
+*/
+
+/* 
+Navigation section
+*/
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #37373d;
+}
+
+.nav-links a,
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logo a {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+.nav-logo a:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+.nav-links a:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+.nav-logo {
+  font-family: "Dancing Script", cursive;
+  padding: 0 10px;
+}
+
+.nav-logo span {
+  color: #eca62e;
+}
+
+.nav-links {
+  text-align: center;
+  padding: 32px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  padding: 20px 10px;
+}
+
+.body {
+  background-image: url("../img/body_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+/* 
+Footer section
+*/
+
+.footer {
+  width: 100%;
+  background-color: #37373d;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+/* 
+End of universal section
+*/
+
+/* 
+#############################################################
+*/
+
+/* 
+Beginning index.html styling
+*/
+
+.drink-list-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  background-color: rgba(231, 231, 231, 0.651);
+  border: 2px solid #37373d;
+  width: 95%;
+  margin: auto;
+}
+
+.drink-item-container {
+  padding-top: 20px;
+  margin: 40px 0;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+
+.drink-item-container img {
+  height: 380px;
+  width: 260px;
+}
+
+.drink-item-container img:hover {
+  cursor: pointer;
+}
+
+.drink-item-name {
+  padding: 20px 0;
+  margin: 0 20px;
+  background-color: #37373d;
+  border: 1px solid black;
+}
+
+.drink-item-name a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.drink-item-name a:hover {
+  text-decoration: underline;
 }
