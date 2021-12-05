@@ -1,5 +1,8 @@
 from django.shortcuts import redirect, render
 from .models import DrinksData
+from .forms import DrinkForm
+from django.http import HttpResponse
+import time
 
 # Create your views here.
 def base(request):
@@ -33,3 +36,28 @@ def details(request, id):
     }
 
     return render(request, 'drinks_app/details.html', context)
+
+def upload(request):
+
+    form = DrinkForm()
+    context = {
+        'form':form,
+    }
+
+    if request.method == 'POST':
+
+        form = DrinkForm(request.POST, request.FILES)
+
+        if form.is_valid():
+
+            form.save()
+            
+            print("Uploaded successfully!")
+
+            time.sleep(2)
+
+            return redirect('home')
+    else:
+        context
+
+    return render(request, 'drinks_app/upload.html', context)
