@@ -9,7 +9,8 @@ from .views import *
 urlpatterns = [
     path('', base, name='base'),
     path('drinks', home, name='home'),
-    re_path(r'^drinks/(?P<id>\d+)/$', details, name='details')
+    re_path(r'^drinks/(?P<id>\d+)/$', details, name='details'),
+    path('upload', upload, name='upload'),
 ]
 
 handler404 = 'drinks_app.views.error_404'
