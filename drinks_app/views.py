@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from .models import DrinksData
 from .forms import DrinkForm
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 import time
 
 # Create your views here.
@@ -37,6 +37,7 @@ def details(request, id):
 
     return render(request, 'drinks_app/details.html', context)
 
+@login_required(login_url='login')
 def upload(request):
 
     form = DrinkForm()
