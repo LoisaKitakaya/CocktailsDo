@@ -38,8 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drinks_app',
+    'users',
     'crispy_forms',
 ]
+
+LOGIN_REDIRECT_URL = '/drinks/'
+
+LOGOUT_REDIRECT_URL = '/drinks/'
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
