@@ -274,3 +274,19 @@ Beginning details.html styling
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
 }
+
+/* 
+End of details.html section
+*/
+
+/* 
+#############################################################
+*/
+
+/* 
+Beginning upload.html styling
+*/
+
+.detail-list-container form {
+  padding: 40px 0;
+}
