@@ -12,7 +12,5 @@ urlpatterns = [
     path('upload', upload, name='upload'),
 ]
 
-handler404 = 'drinks_app.views.error_404'
-
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

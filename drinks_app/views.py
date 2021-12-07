@@ -9,15 +9,9 @@ def base(request):
 
     return render(request, 'drinks_app/base.html')
 
-def error_404(request, exception):
-
-    return render(request, 'drinks_app/404.html', status=404)
-
 def home(request):
 
     drinksdb = DrinksData.objects.all()
-
-    print('Output: ', drinksdb)
 
     context = {
         'drinksdb' : drinksdb
@@ -28,8 +22,6 @@ def home(request):
 def details(request, id):
 
     drink_details = DrinksData.objects.get(id=id)
-
-    print('Output: ', drink_details)
 
     context = {
         'drink_details' : drink_details
@@ -52,8 +44,6 @@ def upload(request):
         if form.is_valid():
 
             form.save()
-            
-            print("Uploaded successfully!")
 
             time.sleep(2)
 

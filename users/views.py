@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import logout as django_logout, authenticate as django_authenticate, login as django_login
+from django.contrib.auth import logout as django_logout, login as django_login
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 import time
 
@@ -13,8 +13,6 @@ def signup(request):
         if form.is_valid():
 
             user = form.save()
-            
-            print("User created successfully!", user)
 
             django_login(request, user)
 
@@ -44,8 +42,6 @@ def login(request):
             user = form.get_user()
 
             django_login(request, user)
-            
-            print("User logged in successfully!")
 
             time.sleep(1)
 
