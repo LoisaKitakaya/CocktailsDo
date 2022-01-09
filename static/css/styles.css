@@ -14,7 +14,7 @@ font-family: 'Tajawal', sans-serif;
 */
 
 /* 
-Begin base.html styling
+Begin of base.html styling
 */
 
 body,
@@ -151,6 +151,15 @@ Navigation section
   font-family: "Raleway", sans-serif;
 }
 
+#to-top {
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* 
 Footer section
 */
@@ -166,7 +175,7 @@ Footer section
 
 .footer p {
   font-weight: bold;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 /* 
@@ -178,7 +187,7 @@ End of universal section
 */
 
 /* 
-Beginning index.html styling
+Beginning of index.html styling
 */
 
 .drink-list-container {
@@ -236,7 +245,7 @@ End of index.html section
 */
 
 /* 
-Beginning details.html styling
+Beginning of details.html styling
 */
 
 .drink-image {
@@ -256,23 +265,21 @@ Beginning details.html styling
 
 .detail-item {
   padding: 20px;
-  
-  
 }
 
 .detail-item img {
   border-radius: 10px;
 }
 
-.ingredient span, 
-.procedure span, 
-.person-posting span, 
-.drink-glass span, 
-.drink-category span, 
-.drink-date span, 
+.ingredient span,
+.procedure span,
+.person-posting span,
+.drink-glass span,
+.drink-category span,
+.drink-date span,
 .drink-name {
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 /* 
@@ -284,9 +291,13 @@ End of details.html section
 */
 
 /* 
-Beginning upload.html styling
+Beginning of upload.html styling
 */
 
 .detail-list-container form {
   padding: 40px 0;
 }
+
+/* 
+End of upload.html styling
+*/
