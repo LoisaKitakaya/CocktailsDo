@@ -41,6 +41,14 @@
         {% endif %}
         <!-- end if -->
       </div>
+
+      <!-- back to top icon -->
+      <img
+        id="to-top"
+        src="{% static 'img/up-arrow.png' %}"
+        alt="scroll back to top icon"
+        onclick="backToTop()"
+      />
     </div>
 
     <!-- Intro -->
@@ -80,4 +88,5 @@
       </div>
     </div>
   </body>
+  <script src="{% static 'js/main.js' %}"></script>
 </html>
