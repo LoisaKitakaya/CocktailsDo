@@ -1,7 +1,7 @@
 # CocktailsDo
 A Django CRUD app. Features include User Authentication, CRUD operations, Markdown Field support, Live deployment to Heroku.
 
-[Preview live](<Homepage url> "Live View")
+[Preview live](<https://cocktailsdo.herokuapp.com/> "Live View")
 
 ## Technologies
 - HTML
